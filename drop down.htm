@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		#container ul{
+			list-style: none;
+		}
+		#container ul li{
+			background-color: red;
+			width: 150px;
+			border:1px solid blue;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			float: left;
+			color: white;
+			position: relative;
+
+		}
+		#container ul li:hover{
+			background-color: green;
+		}
+		#container ul ul{
+			display: none;
+		}
+		#container ul li:hover>ul{
+			display: block;
+		}
+		#container ul ul ul{
+			margin: 150px;
+			margin-top: 0px;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<ul>
+		<li>home</li>
+		<li>home
+			<ul>
+				<li>sattu</li>
+				<li>sattam
+                   <ul>
+                   	<li>home</li>
+		            <li>home</li>
+		            <li>home</li>
+                   </ul>
+				</li>
+				<li>keshpari</li>
+				<li>mitha</li>
+			</ul>
+		</li>
+		<li>home</li>
+		<li>home</li>
+		<li>home</li>
+	</ul>
+</div>
+</body>
+</html>
